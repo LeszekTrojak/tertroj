@@ -1,0 +1,149 @@
+style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #dff1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #1c2b2a;
+}
+
+.name-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  color: #1c2b2a;
+  font-weight: 600;
+}
+
+span {
+  color: #0c7d69;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #86a2a5;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0c7d69;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid {
+  border-color: #d73c3c;
+}
+
+.error {
+  display: none;
+  color: #d73c3c;
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+input:invalid:not(:placeholder-shown) + .error,
+textarea:invalid + .error {
+  display: block;
+}
+
+.query-group {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.radio-card {
+  border: 1px solid #86a2a5;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
+}
+
+.radio-card input {
+  width: auto;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0c7d69;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: #0a5f52;
+}
+
+@media (max-width: 600px) {
+  .name-group {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
