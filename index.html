@@ -1,1 +1,135 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <form class="contact-form">
+
+      <h1>Contact Us</h1>
+
+      <div class="name-group">
+
+        <div class="form-group">
+          <label for="first-name">
+            First Name <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="first-name"
+            required
+          >
+
+          <small class="error">
+            This field is required
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">
+            Last Name <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="last-name"
+            required
+          >
+
+          <small class="error">
+            This field is required
+          </small>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="email">
+          Email Address <span>*</span>
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="email@example.com"
+          required
+        >
+
+        <small class="error">
+          Please enter a valid email address
+        </small>
+      </div>
+
+      <fieldset class="query-group">
+
+        <legend>
+          Query Type <span>*</span>
+        </legend>
+
+        <label class="radio-card">
+          <input
+            type="radio"
+            name="query"
+            required
+          >
+
+          General Enquiry
+        </label>
+
+        <label class="radio-card">
+          <input
+            type="radio"
+            name="query"
+            required
+          >
+
+          Support Request
+        </label>
+
+      </fieldset>
+
+      <div class="form-group">
+        <label for="message">
+          Message <span>*</span>
+        </label>
+
+        <textarea
+          id="message"
+          rows="5"
+          required
+        ></textarea>
+
+        <small class="error">
+          This field is required
+        </small>
+      </div>
+
+      <label class="checkbox-group">
+        <input
+          type="checkbox"
+          required
+        >
+
+        I consent to being contacted by the team
+      </label>
+
+      <button type="submit">
+        Submit
+      </button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
